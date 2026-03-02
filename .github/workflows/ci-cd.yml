@@ -28,7 +28,7 @@ jobs:
           context: ./springboot/app
           file: ./springboot/app/Dockerfile
           push: true
-          tags: naotoHDD/springboot-app:latest
+          tags: moncefbarcous/springboot-app:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v6
@@ -36,7 +36,7 @@ jobs:
           context: ./angular-app
           file: ./angular-app/Dockerfile
           push: true
-          tags: naotoHDD/angular-app:latest
+          tags: moncefbarcous/angular-app:latest
 
       - name: Run application with docker compose
         run: |
